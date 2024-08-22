@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="Example01.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Library Management</h1>
+
+        <form id="book-form">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="year" placeholder="Year of Publication" required>
+            <input type="text" id="genre" placeholder="Genre" required>
+            <select id="status">
+                <option value="unread">Unread</option>
+                <option value="read">Read</option>
+            </select>
+            <button type="submit">Add Book</button>
+        </form>
+
+        <div id="filters">
+            <input type="text" id="filter-genre" placeholder="Filter by Genre">
+            <select id="filter-status">
+                <option value="">Filter by Status</option>
+                <option value="read">Read</option>
+                <option value="unread">Unread</option>
+            </select>
+        </div>
+
+        <ul id="book-list"></ul>
+
+        <div id="book-count"></div>
+
+        <button id="clear-books">Clear All Books</button>
+        <button id="refresh-page">Refresh Page</button>
+    </div>
+
+    <script src="Example01.js"></script>
+</body>
+
+</html>

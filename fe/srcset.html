@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>srcset</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            flex-wrap: wrap;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            max-width: 40vw;
+            max-height: 80vh;
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <picture>
+        <source srcset="img/squirrel.jpg" media="(max-width: 700px)">
+        <source srcset="img/wolf.jpg" media="(max-width: 900px)">
+        <source srcset="img/elephant.jpg">
+        <img src="img/elephant.jpg" alt="size matters">
+    </picture>
+    <picture>
+        <source srcset="img/squirrel.jpg" media="(max-width: 700px)">
+        <source srcset="img/wolf.jpg" media="(max-width: 900px)">
+        <source srcset="img/elephant.jpg">
+        <img src="img/elephant.jpg" alt="size matters">
+    </picture>
+    <footer>
+        <p>&copy; 2024
+            <a href="http://ИзучаемВместе.РФ">http://ИзучаемВместе.РФ</a>,
+            Telegram 
+            <a href="https://t.me/MLSimplified">@MLSimplified</a>,
+            <a href="https://t.me/LearnBestIT">@LearnBestIT</a>
+        </p>
+    </footer>
+</body>
+
+</html>

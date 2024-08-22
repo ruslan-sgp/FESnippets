@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Right Example</title>
+    <style>
+        .container {
+            height: 200px;
+            overflow: auto;
+            border: 1px solid #000;
+        }
+
+        .content {
+            height: 600px;
+        }
+
+        .sticky {
+            position: -webkit-sticky;
+            /* For Safari */
+            position: sticky;
+            right: 0;
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <p>Scroll down to see the sticky element in action.</p>
+            <div class="sticky">I am a sticky element on the right!</div>
+            <p>More content...</p>
+        </div>
+    </div>
+</body>
+
+</html>

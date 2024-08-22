@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лекции</title>
+
+    <style>
+        html {
+            overflow-y: scroll;
+        }
+
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: burlywood;
+            font-size: 1.1rem;
+            margin: 1rem;
+            margin-bottom: 4rem;
+            color: #986845;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h2 {
+            color: brown;
+        }
+
+        a {
+            color: #106ec6;
+        }
+
+        article>div {
+            padding: 0.6rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        article>div::before {
+            content: '🎓 ';
+            position: absolute;
+            left: 0.2rem;
+            opacity: 0;
+        }
+
+        article>div:nth-child(odd) {
+            background-color: antiquewhite;
+        }
+
+        article>div:nth-child(even) {
+            background-color: bisque;
+        }
+
+        article>div:hover {
+            background-color: beige;
+        }
+
+        article>div:hover::before {
+            opacity: 1;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .options button {
+            padding-block: 0.5rem;
+        }
+
+        .hidden {
+            height: 0;
+            opacity: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        .hidden2 {
+            display: none;
+        }
+
+        div {
+            transition: all 300ms, opacity 200ms;
+        }
+
+        .cross {
+            cursor: pointer;
+            font-size: 1.5em;
+            -webkit-user-select: none;
+            user-select: none;
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="options">
+        <button id="toggleButton">Скрыть подробности</button>
+    </div>
+
+    <article>
+        <section>
+            <h2>
+                Модуль 1. Введение во FrontEnd
+            </h2>
+            <div class="cross">❌</div>
+        </section>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/frontend-developers-kto-oni-109429491643 ">
+                    Frontend developers, кто они?
+                </a>
+            </div>
+            <div>
+                9 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/lekcia-frontend-developers-kto-oni-883103686881 ">
+                    Лекция. Frontend developers, кто они?
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231028-0000devtools-v-brauzere-181029789963 ">
+                    Devtools в браузере
+                </a>
+            </div>
+            <div>
+                9 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231028-0000lekcia-devtools-v-brauzere-795465672391 ">
+                    Лекция. Devtools в браузере
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231029-0000vozmoznosti-html-css-js-799554323468 ">
+                    Возможности HTML, CSS, JS
+                </a>
+            </div>
+            <div>
+                3 минуты · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231029-0000lekciavozmoznosti-html-css-js-426823986800 ">
+                    Лекция.Возможности HTML, CSS, JS
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231030-0000redaktory-koda-890030888623 ">
+                    Редакторы кода
+                </a>
+            </div>
+            <div>
+                12 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231030-0000lekciaredaktory-koda-420256829677 ">
+                    Лекция.Редакторы кода
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231031-0000bazovye-elementy--div-span-button-a-260754321698 ">
+                    Базовые элементы - div, span, button, a.
+                </a>
+            </div>
+            <div>
+                9 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231031-0000lekciabazovye-elementy--div-span-button-a-915415300369 ">
+                    Лекция.Базовые элементы - div, span, button, a.
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231101-0000razbor-tega-img-344328504308 ">
+                    Разбор тега "img"
+                </a>
+            </div>
+            <div>
+                27 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231101-0000lekcia-razbor-tega-img-613323303039 ">
+                    Лекция. Разбор тега "img"
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231102-0000instrument-emmet-610220245804 ">
+                    Инструмент "Emmet"
+                </a>
+            </div>
+            <div>
+                11 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231102-0000lekciainstrument-emmet-520204407016 ">
+                    Лекция.Инструмент "Emmet"
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231103-0000tegi-ulolli-br-hr-218592275007 ">
+                    Теги "ul/ol+li", "br", "hr"
+                </a>
+            </div>
+            <div>
+                17 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231103-0000lekciategi-ulolli-br-hr-885039598914 ">
+                    Лекция.Теги "ul/ol+li", "br", "hr"
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231103-0000testirovanie-po-modulu-vvedenie-vo-frontend-394562408395 ">
+                    Тестирование по модулю "Введение во FrontEnd"
+                </a>
+            </div>
+            <div>
+                тест из 15 вопросов
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231103-0000pravilnye-otvety-k-testu-vvedenie-vo-frontend-474406553195 ">
+                    Правильные ответы к тесту "Введение во FrontEnd"
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231103-0000domasnee-zadanie-po-modulu-vvedenie-vo-frontend-465499565197 ">
+                    Домашнее задание по модулю "Введение во FrontEnd"
+                </a>
+            </div>
+            <div>
+                Текущий урок
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/profile/courses/details?coursealias=course207313522962&amp;lecturealias=20231103-0000vebinar-po-modulu-vvedenie-vo-frontend-145686270503 ">
+                    Вебинар по модулю "Введение во FrontEnd"
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <section>
+            <h2>
+                Модуль 2. Веб-верстка. Базовый HTML
+            </h2>
+            <div class="cross">❌</div>
+        </section>
+
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231104-0000html-vvodnyj-urok-436424596498 ">
+                    HTML вводный урок
+                </a>
+            </div>
+            <div>
+                9 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231104-0000lekciahtml-vvodnyj-urok-291918191945 ">
+                    Лекция.HTML вводный урок
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231105-0000tegi-html-head-body-meta-title-541261459291 ">
+                    Теги html, head, body, meta, title
+                </a>
+            </div>
+            <div>
+                12 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231105-0000lekciategi-html-head-body-meta-title-724508328615 ">
+                    Лекция.Теги html, head, body, meta, title
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231106-0000iframe-443132948357 ">
+                    Iframe
+                </a>
+            </div>
+            <div>
+                11 минут · Маргарита Шпилёва Текущий урок
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231106-0000lekciaiframe-240670147810 ">
+                    Лекция.Iframe
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231107-0000semantika-687299554468 ">
+                    Семантика
+                </a>
+            </div>
+            <div>
+                14 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231107-0000lekciasemantika-732677631990 ">
+                    Лекция.Семантика
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231108-0000h1h6-436737122436 ">
+                    h1-h6
+                </a>
+            </div>
+            <div>
+                24 минуты · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231108-0000lekciah1h6-928868369289 ">
+                    Лекция.h1-h6
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231108-0000section-main-header-footer-413254952296 ">
+                    Section, main, header, footer
+                </a>
+            </div>
+            <div>
+                19 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231108-0000lekciasection-main-header-footer-195477297098 ">
+                    Лекция.Section, main, header, footer
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231108-0000tablicy-222641154844 ">
+                    Таблицы
+                </a>
+            </div>
+            <div>
+                19 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231108-0000formy-865013199514 ">
+                    Формы
+                </a>
+            </div>
+            <div>
+                33 минуты · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231108-0000testirovanie-po-modulu-vebverstka-bazovyj-html-191432673551 ">
+                    Тестирование по модулю "Веб-верстка. Базовый HTML"
+                </a>
+            </div>
+            <div>
+                тест из 22 вопросов
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231108-0000pravilnye-otvety-k-testu-vebverstka-bazovyj-html-488179241575 ">
+                    Правильные ответы к тесту "Веб-верстка. Базовый HTML"
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231108-0000domasnee-zadanie-po-modulu-2-vebverstka-bazovyj-html-166880400479 ">
+                    Домашнее задание по модулю 2 "Веб-вёрстка. Базовый HTML"
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/profile/courses/details?coursealias=course207313522962&amp;lecturealias=20231109-0000vebinar-po-modulu-vebverstka-bazovyj-html-808358580111 ">
+                    Вебинар по модулю "Веб-верстка. Базовый HTML."
+                </a>
+            </div>
+            <div>
+                11 минут · Радик Сирезетдинов
+            </div>
+        </div>
+    </article>
+    <article>
+        <section>
+            <h2>
+                Модуль 3. Базовый CSS
+            </h2>
+            <div class="cross">❌</div>
+        </section>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231110-0000css-vvodnyj-urok-181049885186 ">
+                    CSS вводный урок
+                </a>
+            </div>
+            <div>
+                2 минуты · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231110-0000lekciacss-vvodnyj-urok-118392959351 ">
+                    Лекция.CSS вводный урок
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231110-0000sposoby-podklucenia-css-459455356833 ">
+                    Способы подключения CSS
+                </a>
+            </div>
+            <div>
+                10 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231110-0000lekciasposoby-podklucenia-css-142129181583 ">
+                    Лекция.Способы подключения CSS
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231111-0000osnovnye-selektory-specificnost-kaskadnost-452166395109 ">
+                    Основные селекторы, специфичность, каскадность
+                </a>
+            </div>
+            <div>
+                11 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231111-0000lekciaosnovnye-selektory-specificnost-kaskadnost-587785990661 ">
+                    Лекция.Основные селекторы, специфичность, каскадность
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231112-0000ese-nemnogo-pro-selektory-664185450344 ">
+                    Еще немного про селекторы
+                </a>
+            </div>
+            <div>
+                10 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231112-0000lekciaese-nemnogo-pro-selektory-605261417973 ">
+                    Лекция.Еще немного про селекторы
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231113-0000srifty-897153966909 ">
+                    Шрифты
+                </a>
+            </div>
+            <div>
+                13 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231113-0000lekciasrifty-901277360042 ">
+                    Лекция.Шрифты
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231119-0000zacetnaa-rabota-po-modulu-3-bazovyj-css-404506317759 ">
+                    Зачетная работа по модулю 3 "Базовый CSS"
+                </a>
+            </div>
+            <div>
+                Текущий урок
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231114-0000svojstvo-display-642589208809 ">
+                    Свойство Display
+                </a>
+            </div>
+            <div>
+                7 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231114-0000lekciasvojstvo-display-620306336942 ">
+                    Лекция.Свойство Display
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231115-0000display--flex-282360444833 ">
+                    Display - flex
+                </a>
+            </div>
+            <div>
+                11 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231115-0000lekciadisplay--flex-410365755513 ">
+                    Лекция.Display - flex
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231116-0000display--grid-557330120648 ">
+                    Display - grid
+                </a>
+            </div>
+            <div>
+                8 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231116-0000lekciadisplay--grid-426077667346 ">
+                    Лекция.Display - grid
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231117-0000svojstvo-position-520996355745 ">
+                    Свойство position
+                </a>
+            </div>
+            <div>
+                12 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231117-0000lekciasvojstvo-position-910174609942 ">
+                    Лекция.Свойство position
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231118-0000psevdoklassy-363853838997 ">
+                    Псевдоклассы
+                </a>
+            </div>
+            <div>
+                9 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231118-0000lekciapsevdoklassy-466196377205 ">
+                    Лекция.Псевдоклассы
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231119-0000psevdoelementy-273232592216 ">
+                    Псевдоэлементы
+                </a>
+            </div>
+            <div>
+                7 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231119-0000lekciapsevdoelementy-111217485679 ">
+                    Лекция.Псевдоэлементы
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231119-0000media-vyrazenia-744125766569 ">
+                    Медиа выражения
+                </a>
+            </div>
+            <div>
+                5 минут · Дмитрий Ермолаев
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231119-0000lekciamedia-vyrazenia-255559418407 ">
+                    Лекция.Медиа выражения
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/profile/courses/details?coursealias=course207313522962&amp;lecturealias=20231120-0000vebinar-po-modulu-bazovyj-css-919537110183 ">
+                    Вебинар по модулю "Базовый CSS."
+                </a>
+            </div>
+            <div>
+                11 минут · Радик Сирезетдинов
+            </div>
+        </div>
+    </article>
+    <article>
+        <section>
+            <h2>
+                Модуль 4. JS: база
+            </h2>
+            <div class="cross">❌</div>
+        </section>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231121-0000vvodnyj-urok-po-js-881857734770 ">
+                    Вводный урок по JS
+                </a>
+            </div>
+            <div>
+                12 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231121-0000lekciavvodnyj-urok-po-js-964864429387 ">
+                    Лекция.Вводный урок по JS
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231121-0000standartnaa-biblioteka-992910495643 ">
+                    Стандартная библиотека
+                </a>
+            </div>
+            <div>
+                10 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231121-0000lekciastandartnaa-biblioteka-382929230796 ">
+                    Лекция.Стандартная библиотека
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231122-0000mdn-webreference-688498759800 ">
+                    MDN, webreference
+                </a>
+            </div>
+            <div>
+                6 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231122-0000lekciamdn-webreference-610835151803 ">
+                    Лекция.MDN, webreference
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231122-0000podklucenie-js-939152104201 ">
+                    Подключение JS
+                </a>
+            </div>
+            <div>
+                9 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231122-0000lekciapodklucenie-js-708234794716 ">
+                    Лекция.Подключение JS
+                </a>
+            </div>
+            <div>
+                Текущий урок
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231123-0000peremennaa-944321463971 ">
+                    Переменная
+                </a>
+            </div>
+            <div>
+                9 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231123-0000lekciaperemennaa-801474814314 ">
+                    Лекция.Переменная
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231124-0000funkcii-112464472962 ">
+                    Функции
+                </a>
+            </div>
+            <div>
+                10 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231125-0000logirovanie-i-debagging-863919531077 ">
+                    Логирование и дебаггинг
+                </a>
+            </div>
+            <div>
+                9 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231126-0000moduli-125863694342 ">
+                    Модули
+                </a>
+            </div>
+            <div>
+                11 минут · Маргарита Шпилёва
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231125-0000zacetnaa-rabota-po-modulu-4-jsbaza-264488702444 ">
+                    Зачетная работа по модулю 4 "JS.База"
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231127-0000testirovanie-po-modulu-4-277584251805 ">
+                    Тестирование по модулю 4.
+                </a>
+            </div>
+            <div>
+                тест из 10 вопросов
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/members/courses/course207313522962/20231127-0000pravilnye-otvety-k-testirovaniu-po-modulu-4-536260788473 ">
+                    Правильные ответы к тестированию по модулю 4.
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a
+                    href=" https://urban-university.ru/profile/courses/details?coursealias=course207313522962&amp;lecturealias=20231128-0000vebinar-po-modulu--js-baza-559330887921 ">
+                    Вебинар по модулю " JS: база"
+                </a>
+            </div>
+            <div>
+            </div>
+        </div>
+    </article>
+
+    <script>
+        function checkAndToggleOptions() {
+            let allDivsHidden = true;
+            const divs = document.querySelectorAll('article>div');
+            divs.forEach(div => {
+                if (!div.classList.contains('hidden2')) {
+                    allDivsHidden = false;
+                }
+            });
+
+            // Select the .options div
+            const optionsDiv = document.querySelector('.options');
+
+            // Toggle visibility of .options based on allDivsHidden
+            if (allDivsHidden) {
+                optionsDiv.style.opacity = 0;
+            } else {
+                optionsDiv.style.opacity = 1;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('toggleButton');
+            const details = document.querySelectorAll('article>div>div:nth-child(2)');
+
+            let isHidden = false;
+
+            button.addEventListener('click', () => {
+                isHidden = !isHidden;
+                if (isHidden) {
+                    button.textContent = 'Показать подробности';
+                } else {
+                    button.textContent = 'Скрыть подробности';
+                }
+                details.forEach(div => { div.classList.toggle('hidden', isHidden) })
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select all articles (in case there are multiple)
+            const articles = document.querySelectorAll('article');
+
+            articles.forEach(article => {
+                const crossDiv = article.querySelector('.cross');
+                const contentDivs = [];
+
+                // Collect all sibling divs following the section
+                let nextElem = crossDiv.parentElement.nextElementSibling;
+                while (nextElem) {
+                    if (nextElem.tagName.toLowerCase() === 'div') {
+                        contentDivs.push(nextElem);
+                    }
+                    nextElem = nextElem.nextElementSibling;
+                }
+
+                // Initial state: content visible, cross icon shown
+                let isContentVisible = true;
+
+                crossDiv.addEventListener('click', () => {
+                    isContentVisible = !isContentVisible;
+                    contentDivs.forEach(div => {
+                        div.classList.toggle('hidden2', !isContentVisible);
+                    });
+                    crossDiv.textContent = isContentVisible ? '❌' : '➕';
+                    checkAndToggleOptions();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
