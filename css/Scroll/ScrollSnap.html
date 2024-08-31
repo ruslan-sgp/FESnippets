@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Snap</title>
+    <style>
+        :root {
+            --bgcol: cadetblue;
+            --fgcol: #e6faf7;
+            --textcol: #1a9b9f;
+        }
+        body {
+            background-color: var(--bgcol);
+            height: 96svh;
+            color: var(--fgcol);
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding: 0.8rem 2rem;
+            line-height: 1.2rem;
+            letter-spacing: 0.1rem;
+        }
+
+        .viewPort {
+            height: 90svh;
+            color: var(--textcol);
+            border-radius: 1rem;
+            margin: 0 auto;
+            width: 86vw;
+        }
+
+        .viewPort ol {
+            display: flex;
+            list-style: none;
+            height: 100%;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding: 0;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            border-radius: 1rem;
+        }
+
+        .viewPort li {
+            min-width: 81.4vw;
+            padding: 1rem;
+            scroll-snap-align: start;
+        }
+
+        .viewPort li:first-child {
+            background-color: pink;
+        }
+
+        .viewPort li:nth-child(2) {
+            background-color: skyblue;
+        }
+
+        .viewPort li:last-child {
+            background-color: #99ee99;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scroll Snap</h1>
+    <p>Липучая прокрутка</p>
+    <div class="viewPort">
+        <ol>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ol>
+    </div>
+</body>
+</html>
