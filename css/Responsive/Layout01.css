@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #0077ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav,
+footer {
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkblue;
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #0077ff;
+  border-radius: 12%;
+}
+
+.menu ol {
+  list-style: none;
+  display: flex;
+  gap: 5vw;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+main {
+  background-color: white;
+  color: #004492;
+}
+
+#welcome {
+  color: white;
+  background-image: url("img/computer.background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+  padding-inline: 4rem;
+}
+
+#welcome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080; /* Adjust the color and opacity */
+  z-index: 1;
+}
+
+#welcome > * {
+  position: relative;
+  z-index: 2;
+}
+
+#welcome h1 {
+  font-size: 3rem;
+  margin-top: 0;
+  padding: 4rem 0rem 2rem;
+}
+
+#welcome p {
+  padding-left: 40vw;
+  padding-bottom: 2rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+#cards {
+  padding: 1rem 3rem 3rem;
+  display: flex;
+  gap: 3rem;
+  flex-grow: 2;
+}
+
+footer {
+  background-color: #63acff;
+  padding: 2rem;
+}
+
+#welcome img {
+    display: none;
+}
+
+@media (max-width: 840px) {
+  .logo {
+    font-size: 1.6rem;
+    padding: 0.4rem;
+  }
+
+  .menu ol {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+  #welcome h1 {
+    font-size: 2rem;
+  }
+  #welcome p {
+    padding-left: 10vw;
+  }
+
+  #cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 620px) {
+    #welcome {
+        background-image: none;
+    }
+
+    #welcome img {
+        display: block;
+    }
+
+    .menu ol {
+        flex-direction: column;
+    }
+
+    nav {
+        height: 3rem;
+    }
+}

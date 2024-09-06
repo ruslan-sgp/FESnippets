@@ -34,6 +34,8 @@ body {
   text-align: center;
 }
 
+/* Media queries for hover */
+
 @media (hover: hover) {
   .card:hover {
     background-color: #f8ff75;
