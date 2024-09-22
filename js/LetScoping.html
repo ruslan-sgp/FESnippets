@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Scoping</title>
+</head>
+
+<body>
+    <h1>Let Scoping</h1>
+    <p>See console for the output</p>
+    <p>Test whether a function has access to a variable declared with let 
+        in its other scope</p>
+    <script>
+        console.log('Declaring an outer variable with let')
+        let globalVariable = "I am outside";
+
+        function myFunction() {
+            console.log('Using the outer variable inside a function');
+            console.log(globalVariable);
+            console.log('Success')
+        }
+
+        console.log('Calling a function')
+        myFunction();
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

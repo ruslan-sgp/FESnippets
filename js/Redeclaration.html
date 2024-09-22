@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Variable Declaration</title>
+</head>
+
+<body>
+    <h1>Re-declaration check</h1>
+    <p>A variable is redeclared with let. We want to see whether any code will ever get executed</p>
+    <script>
+        // none of the following lines are ever reached,
+        // because redeclaration is found during the parsing phase
+        // before the code is executed
+        console.log('Before let');
+        let x = 10;
+        console.log('First declaration of x: ' + x);
+        let x = 10;
+    </script>
+</body>
+
+</html>
