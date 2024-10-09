@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            background-color: bisque;
+            font-size: 1.1rem;
+        }
+
+        header {
+            color: darkorange;
+            background-color: brown;
+            padding: 2rem;
+            position: relative;
+        }
+
+        main section {
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        main section img {
+            max-width: 35vw;
+        }
+
+        .menu-icon {
+            width: 3rem;
+            height: 2.6rem;
+            position: absolute;
+            right: 2rem;
+            top: 3.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .menu-icon div {
+            background-color: blanchedalmond;
+            min-width: 5px;
+            min-height: 5px;
+            border-radius: 2px;
+        }
+
+        .menu-content {
+            position: absolute;
+            top: 166px;
+            right: 0;
+            bottom: 0;
+            width: 10rem;
+            background-color: #d2691e;
+            background-image: linear-gradient(#d2691e, #d2691eb7);
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+        }
+
+        .menu-content div {
+            padding: 1.2rem;
+            font-size: 1.2rem;
+        }
+
+        .menu-content div:hover {
+            background-color: #ff8025;
+        }
+
+        .dim {
+            visibility: visible;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dim">
+
+    </div>
+    <div class="menu-content">
+        <div>Home</div>
+        <div>Services</div>
+        <div>Contact</div>
+    </div>
+    <header>
+        <h1>Hamburger, anyone?</h1>
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <img src="hamburger.jpg" alt="Delicious Hamburger">
+            <p>Hamburg, a city known for its vibrant culture and history, is also home to some of the finest menus
+                featuring
+                the humble hamburger. Whether you're strolling along the Elbe or exploring the bustling streets of St.
+                Pauli, you'll find an endless variety of burger joints. From classic cheeseburgers to gourmet creations
+                loaded with truffle fries, Hamburg’s menus offer something for everyone. The city's love for hamburgers
+                is
+                rivaled only by its passion for freshly brewed beers, making it the ultimate destination for food lovers
+                and casual diners alike.</p>
+        </section>
+    </main>
+    <footer>
+        <p>May every meal nourish your body and bring you strength and good health!</p>
+    </footer>
+</body>
+
+</html>

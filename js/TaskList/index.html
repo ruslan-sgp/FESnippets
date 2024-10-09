@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tasks.js" defer></script>
+</head>
+
+<body>
+    <h1>My Tasks</h1>
+    <div id="form">
+        <input id="taskName" type="text" placeholder="Задача">
+        <input id="taskStatus" type="checkbox">
+        <button onclick="addTask()">Добавить</button>
+        <input id="filter" oninput="filter()" type="text" placeholder="Фильтр">
+    </div>
+    <ul id="taskList">
+    </ul>
+</body>
+
+</html>

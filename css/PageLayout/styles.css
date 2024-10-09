@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  font-size: 2.2em;
+  color: white;
+  background-image: linear-gradient(90deg, dodgerblue, navy);
+  padding: 0.8rem;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+.intro {
+    color: white;
+    background-color: #007bff;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.content {
+    padding: 0.8rem;
+    text-align: center;
+    background-color: white;
+}
+
+.content *::selection {
+    text-shadow: 5px 5px 5px #0000008e;
+}

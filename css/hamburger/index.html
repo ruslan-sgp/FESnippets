@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+
+    <style>
+        body {
+            font-size: 1.2rem;
+        }
+
+        header {
+            background-color: aquamarine;
+            padding: 1.6rem;
+        }
+
+        main {
+            background-color: azure;
+        }
+
+        footer {
+            background-color: cadetblue;
+        }
+
+        .hamburger-icon {
+            width: 2.6rem;
+            height: 2.6rem;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .hamburger-icon div {
+            background-color: blue;
+            width: 100%;
+            height: 5px;
+            border-radius: 3px;
+            transform-origin: left;
+        }
+
+        .menu {
+            background-color: yellow;
+            position: absolute;
+            top: 80px;
+            bottom: 0;
+            flex-direction: column;
+            transition: all 100ms;            
+        }
+
+        .menu:not(.active) {
+            /* display: none; */
+            right: -11rem;
+        }
+
+        .menu.active {
+            /* display: flex; */
+            right: 0;
+        }
+
+        .menu div {
+            padding: 1rem;
+            padding-right: 5rem;
+        }
+
+        .menu div:hover {
+            background-color: lawngreen;
+        }
+
+        .blackBox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.347);
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .hamburger-icon.cross-icon div:nth-child(1) {
+            transform: rotate(45deg);
+        }
+
+        .hamburger-icon.cross-icon div:nth-child(2) {
+            visibility: hidden;
+        }
+
+        .hamburger-icon.cross-icon div:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+    </style>
+
+    <script src="menu.js" defer></script>
+</head>
+
+<body>
+    <div class="blackBox hide">
+
+    </div>
+    <header>
+        <div>Logo</div>
+        <div class="hamburger-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu">
+            <div><a href="1">About</a></div>
+            <div><a href="2">Products</a></div>
+            <div><a href="3">Contact</a></div>
+        </div>
+    </header>
+    <main>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit, ad dignissimos iste possimus vitae
+            ullam enim rerum repellat pariatur aspernatur. Autem ipsum quo dolorum neque. Possimus sed eaque nemo.
+            Aspernatur similique, ex, architecto culpa numquam esse repellendus molestiae voluptas autem doloremque
+            modi, atque quibusdam saepe id accusamus ipsum necessitatibus libero nemo temporibus magni velit vero
+            quisquam hic? Ab, iusto.
+            Neque, eveniet temporibus exercitationem eligendi incidunt explicabo id laboriosam hic dolores quibusdam
+            asperiores aperiam odio voluptas mollitia minus. Labore doloremque rem asperiores, expedita quibusdam odit
+            quasi beatae repudiandae placeat delectus.
+            Facilis esse iusto impedit mollitia ab, saepe, qui, distinctio dignissimos sit est nam magni eveniet sequi
+            iste expedita voluptatibus illo a quisquam excepturi consequuntur harum. Sapiente delectus repudiandae
+            accusamus nulla!
+            Atque quam excepturi vitae cupiditate a ex debitis exercitationem amet optio mollitia molestias, obcaecati
+            facilis illum. Quas iste ea, aspernatur molestiae placeat eius laboriosam dolorem recusandae quaerat
+            voluptas quis reprehenderit.
+            Modi earum nesciunt alias consectetur amet distinctio laboriosam voluptas facere officiis dicta eum, officia
+            veritatis nihil? Adipisci commodi, aut, debitis velit officiis, nisi perferendis sint rem nulla magnam vero
+            facere.
+            Tenetur neque vitae nobis magnam maiores dolore totam, animi accusantium. Ex fugiat accusantium culpa hic
+            sequi temporibus, vero velit voluptas maxime eligendi quasi, dolor atque debitis totam illum ab eaque.
+            Consectetur nemo reiciendis deserunt beatae repellat, eaque recusandae ipsa corporis ex cumque sunt hic
+            aperiam temporibus nesciunt. Odio sapiente ipsum, reiciendis quos error libero consectetur iste odit ea,
+            minus debitis?
+            Cupiditate vero dicta reprehenderit inventore nihil rem, id, corporis suscipit reiciendis perspiciatis eum
+            rerum voluptatem tempore, aliquam illo facere. Magni, mollitia excepturi. Eos, voluptatibus eveniet?
+            Explicabo ea est reiciendis delectus.
+            Repellat eveniet illo possimus veritatis impedit labore ipsam dolore sapiente blanditiis natus facere
+            dolorum nisi nam beatae accusantium expedita ex, dolor corporis. Consequatur ea cupiditate, molestias fugit
+            corrupti nobis explicabo.</p>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid adipisci ea, magnam enim libero
+            soluta unde modi aperiam tempore dignissimos sed quis! Iste perferendis incidunt iusto eos, quia saepe.</p>
+
+    </footer>
+</body>
+
+</html>
