@@ -1,0 +1,13 @@
+body {
+    background-color: skyblue;
+    color: darkblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+
