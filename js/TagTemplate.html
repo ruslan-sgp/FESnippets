@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Template Literals</title>
+    <style>
+        .time {
+            color: purple;
+        }
+
+        .value {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tag Template Literals</h1>
+    <div id="root"></div>
+    <script>
+        function log(strings, ...values) {
+            let
+                index = 0,
+                s = strings.reduce((ac, s) =>
+                    `${ac}<span class='value' style='font-size: 1.${index}rem'>${values[index++]}</span>${s}`),
+                sTime = Date().toString().substr(16, 8);
+            document.getElementById('root').innerHTML +=
+                `<div>
+                    <span class='time'>${sTime}</span> ${s}
+                </div>`;
+        }
+
+        const s = 'world';
+        log`Hello ${s}`;
+        log`This is line 2`;
+        log``;
+        log`That was an empty lne`;
+
+        setTimeout(() => {
+            log`One ${1} two ${2} three ${3} finish`;
+        }, 1000);
+    </script>
+</body>
+
+</html>
